@@ -1,0 +1,3 @@
+Y1 = ~AB + A~C
+Y2 = A~C + AC = A
+Y3 = AC
