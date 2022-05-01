@@ -75,7 +75,22 @@
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>D CLK Q	Qb
+0 1   x x
+1 1   x x
+1 0   x x
+x 0   x x
+0 0   x x
+1 0   x x
+1 1   x x
+0 1   x x</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
       <pos x="-80" y="40"/>
     </visualElement>
   </visualElements>

@@ -74,7 +74,7 @@
           </testData>
         </entry>
       </elementAttributes>
-      <pos x="260" y="0"/>
+      <pos x="300" y="20"/>
     </visualElement>
   </visualElements>
   <wires>
