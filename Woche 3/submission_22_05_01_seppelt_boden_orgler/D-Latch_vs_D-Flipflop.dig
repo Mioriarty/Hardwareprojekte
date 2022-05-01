@@ -134,22 +134,21 @@
         <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>CLK D Q_FlipFlop Q_Latch
-1 0 0 0
-1 1 0 1
-0 1 0 1
-1 1 1 1
-1 0 1 0
-1 1 1 1
-0 1 1 1
-0 0 1 1
-0 1 1 1
-1 1 1 1
-</dataString>
+            <dataString>D CLK Q_Latch Q_FlipFlop
+0 1 x x
+1 1 x x
+1 0 x x
+1 1 x x
+0 1 x x
+1 1 x x
+1 0 x x
+0 0 x x
+1 0 x x
+1 1 x x</dataString>
           </testData>
         </entry>
       </elementAttributes>
-      <pos x="720" y="-20"/>
+      <pos x="700" y="0"/>
     </visualElement>
   </visualElements>
   <wires>
