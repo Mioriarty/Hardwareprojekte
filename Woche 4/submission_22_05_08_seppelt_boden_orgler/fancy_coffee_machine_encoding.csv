@@ -2,7 +2,9 @@
 S0,00
 S1,01
 S2,10
+S3,11
 
 S0 aktiv bei S = 00
 S1 aktiv bei S = 01
 S2 aktiv bei S = 10
+S3 aktiv bei S = 11
