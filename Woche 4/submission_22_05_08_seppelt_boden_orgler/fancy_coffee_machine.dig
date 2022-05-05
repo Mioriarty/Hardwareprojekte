@@ -7,12 +7,12 @@
       <elementName>Button</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>Coin</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Coin</string>
         </entry>
       </elementAttributes>
       <pos x="240" y="100"/>
@@ -21,12 +21,12 @@
       <elementName>Button</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>Small Coffee</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Small Coffee</string>
         </entry>
       </elementAttributes>
       <pos x="300" y="100"/>
@@ -35,12 +35,12 @@
       <elementName>Button</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>Large Coffee</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Large Coffee</string>
         </entry>
       </elementAttributes>
       <pos x="360" y="100"/>
@@ -113,10 +113,6 @@
       <elementName>LED</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>Ready</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
@@ -128,6 +124,10 @@
             <blue>102</blue>
             <alpha>255</alpha>
           </awt-color>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Ready</string>
         </entry>
       </elementAttributes>
       <pos x="1100" y="100"/>
@@ -164,7 +164,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>Brew Small Coffee</string>
+          <string>Brew small Coffee</string>
         </entry>
       </elementAttributes>
       <pos x="1220" y="100"/>
@@ -271,7 +271,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>Ltte Macchiato</string>
+          <string>Latte Macchiato</string>
         </entry>
       </elementAttributes>
       <pos x="420" y="100"/>
