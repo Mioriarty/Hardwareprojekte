@@ -156,8 +156,8 @@
         <entry>
           <string>Color</string>
           <awt-color>
-            <red>102</red>
-            <green>51</green>
+            <red>153</red>
+            <green>102</green>
             <blue>0</blue>
             <alpha>255</alpha>
           </awt-color>
@@ -179,8 +179,8 @@
         <entry>
           <string>Color</string>
           <awt-color>
-            <red>102</red>
-            <green>51</green>
+            <red>153</red>
+            <green>102</green>
             <blue>0</blue>
             <alpha>255</alpha>
           </awt-color>
@@ -466,8 +466,8 @@
         <entry>
           <string>Color</string>
           <awt-color>
-            <red>102</red>
-            <green>51</green>
+            <red>153</red>
+            <green>102</green>
             <blue>0</blue>
             <alpha>255</alpha>
           </awt-color>
