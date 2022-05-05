@@ -1,0 +1,10 @@
+Hier mit Beachtung, dass keine 2 Knöpfe geleichzeitig gedrückt werden können.
+
+S0' = ~S1 ~S0 A + ~S1 S0 ~A ~B1 + S1 ~S0 A + S1 ~S0 B1 + S1 S0 ~A ~B1 ~B2 ~B3 + S1 S0 A + S1 S0 B2
+S1' = ~S1 S0 A + S1 ~S0 ~A ~B1 ~B2 + S1 ~S0 A + S1 S0 ~A ~B1 ~B2 ~B3 + S1 S0 A + S1 S0 B1
+
+Y1 = S1 + S0
+Y2 = S1 S0 A
+Y3 = ~S1 S0 B1 + S1 ~S0 B1 + S1 S0 B1
+Y4 = S1 ~S0 B2 + S1 S0 B2
+Y5 = S1 S0 B3
