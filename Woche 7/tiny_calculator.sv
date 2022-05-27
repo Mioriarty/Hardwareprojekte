@@ -24,8 +24,9 @@ module tiny_calculator( input  logic [7:0] SW,
      logic [3:0] result;
      
      assign inp_carry = 1'b0;
+     assign out_carry[3:1] = 3'b000;
      
-     ripple_carry_adder_4 rca(HEX0, HEX1, inp_carry, result, out_carry[0:0]);
+     ripple_carry_adder_4 rca(SW[3:0], SW[7:4], inp_carry, result, out_carry[0:0]);
      
      decoder dec3(result, HEX2);
      
