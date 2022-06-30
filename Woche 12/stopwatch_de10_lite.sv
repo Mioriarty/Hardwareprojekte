@@ -76,7 +76,7 @@ module stopwatch_de10_lite( input  logic       MAX10_CLK1_50,
   counter_mod_k_count #(4) counter_dec_1s(l_clk_s_1, l_reset, 4'd10, l_count_s_1);
   
   decoder decode_1s(l_count_s_1, HEX1[6:0]);
-  assign HEX1[7] = 1'b1;
+  assign HEX1[7] = 1'b0;
 
   // 10s clock
   counter_mod_k_ro #(28) counter_over_10s( l_clk_50mhz,
@@ -130,6 +130,6 @@ module stopwatch_de10_lite( input  logic       MAX10_CLK1_50,
   assign LEDR[9] = l_clk_m_10;
   
   // blinking dash
-  assign HEX3 = {l_clk_s_1, 5'b11111};
+  assign HEX3 = {l_clk_s_1, 6'b111111};
   
 endmodule
