@@ -1,0 +1,26 @@
+
+add_c.o:     file format elf64-littleaarch64
+
+
+Disassembly of section .text:
+
+0000000000000000 <add_c>:
+// Sei n die Länge des Arrays. 
+// Bei n = 0, beende das Programm
+   0:	b4000120 	cbz	x0, 24 <add_c+0x24>
+// x4 ist unser Index. Setze ihn auf 0
+   4:	d2800004 	mov	x4, #0x0                   	// #0
+// Lädt das x4-te Element von x1 in x5. Dabei muss der Index noch mal 8 genommen werden. Genau das übernimmt der logical left shift um 3 bits (lsl #3)
+   8:	f8647825 	ldr	x5, [x1, x4, lsl #3]
+// Lädt das x4-te Element von x2 in x6.
+   c:	f8647846 	ldr	x6, [x2, x4, lsl #3]
+// Gewöhnliche Addition. Ergebnis in x5.
+  10:	8b0600a5 	add	x5, x5, x6
+// Speichert das Additionsergebnis in das x4-te Element von x3. (Selbe Logik mit dem left shift)
+  14:	f8247865 	str	x5, [x3, x4, lsl #3]
+// Inkrementiere den Index
+  18:	91000484 	add	x4, x4, #0x1
+// Falls der Index mit n übereinstimmt, beende das Programm
+  1c:	eb04001f 	cmp	x0, x4
+  20:	54ffff41 	b.ne	8 <add_c+0x8>  // b.any
+  24:	d65f03c0 	ret

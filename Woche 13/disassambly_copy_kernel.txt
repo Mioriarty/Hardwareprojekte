@@ -1,0 +1,18 @@
+
+copy_kernel.o:     file format elf64-littleaarch64
+
+
+Disassembly of section .text:
+
+0000000000000000 <copy_c>:
+// Lädt die Werte im Array in Paaren in die Register x0 bis x7 (x1 ausgenommen). Dies ist schneller, da pro Wertepaar nur ein statt 2 Befehle benötigt werden
+   0:	a9401807 	ldp	x7, x6, [x0]
+   4:	a9411005 	ldp	x5, x4, [x0, #16]
+   8:	a9420803 	ldp	x3, x2, [x0, #32]
+   c:	f9401800 	ldr	x0, [x0, #48] // Hier ist von den 7 Werten nur noch 1 übrig
+// Speichert die Werte von x0 in Paaren das Array, worauf x1 zeigt. (x1 wurde oben ja ausgelassen)
+  10:	a9001827 	stp	x7, x6, [x1]
+  14:	a9011025 	stp	x5, x4, [x1, #16]
+  18:	a9020823 	stp	x3, x2, [x1, #32]
+  1c:	f9001820 	str	x0, [x1, #48] // Hier ist von den 7 Werten nur noch 1 übrig
+  20:	d65f03c0 	ret
